@@ -2,7 +2,6 @@
 File Name: aneup_det.py
 Description: The function of this file is to detect aneuploidy using pan-genomic graph.
 Author: Xavier Xue
-Date: Aug 13
 Python Version: 3.7
 """
 
