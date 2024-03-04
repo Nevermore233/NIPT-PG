@@ -2,12 +2,12 @@
 NIPT-PG: Empowering Non-Invasive Prenatal Testing to learn from population genomics through an incremental pan-genomic approach
 
 ## Step 1. Package Dependency
-first, install the NPIT-PG conda environment:
+first, install the NIPT-PG conda environment:
 ```bash
-conda create -c NPIT-PG
+conda create -c NIPT-PG
 ```
 ```bash
-conda activate NPIT-PG
+conda activate NIPT-PG
 ```
 then, in NPIT-PG environment, install the following package:
 ```bash
