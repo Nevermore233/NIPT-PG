@@ -79,19 +79,11 @@ python3 aneup_det.py [-s SAM_PATH] [-g ALIGNED_SAM_PATH] [-n NIPT_FILE]
 
 • -r right threshold of z-score (default = 3)
 
-• -c a file containing the mean and standard deviation of control samples (details in **Table 2**).
 
 ### example:
 ```bash
 python3 aneup_det.py -s data/sam/ -g data/aligned_sam/ -n data/nipt_files_ART-Random.csv -l -3 -r 3 -c data/control_group (AR).csv
 ```
-#### Table 2. The mean and standard deviation of control samples.
-
-| chr | mean | sd |
-|--------|--------|--------|
-| chr13   | 0.040201   | 0.009946   |
-| chr18   | 0.041326   | 0.009731   |
-| chr21   | 0.041521   | 0.009685   |
 
 
 
