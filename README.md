@@ -3,10 +3,16 @@ NIPT-PG: Empowering Non-Invasive Prenatal Testing to learn from population genom
 
 ## Step 1. Package Dependency
 first, install the NPIT-PG conda environment:
-'''conda create -c NPIT-PG'''
-'''conda activate NPIT-PG'''
+```bash
+conda create -c NPIT-PG
+```
+```bash
+conda activate NPIT-PG
+```
 then, in NPIT-PG environment, install the following package:
-'''pip install pandas numpy tqdm argparse'''
+```bash
+pip install pandas numpy tqdm argparse
+```
 
 ## Step 2. generating pan-genome
 ### usage:
@@ -25,6 +31,15 @@ python3 gen_pgg.py [-r REF.FA_FILE] [-s SAM_PATH] [-n NIPT_FILE]
 python3 gen_pgg.py -r data/ref.fa -s data/sam/ -n data/nipt_files_ART-Random.csv
 ```
 The content of the nipt_files.csv file is as illustrated in Table 1, documenting the file name mappings for each testing file. This practice aids in standardizing file management and enhances testing efficiency.
+
+Table 1. Illustration of the nipt_files.csv file.
+
+| id | nipt_files | mapping |
+|--------|--------|--------|
+| 0   | CL100050702_L02_91   | sample_0   |
+| 1   | CL100025607_L02_22   | sample_1   |
+| 2   | CL100035831_L01_15   | sample_2   |
+| ...   |...   | ...   |
 
 ## Step 3. Sequence-to-graph alignment
 ### usage:
@@ -54,14 +69,21 @@ python3 aneup_det.py [-s SAM_PATH] [-g ALIGNED_SAM_PATH] [-n NIPT_FILE]
 [-c CONTROL SAMPLE]
 ```
 ### optional arguments: 
--s path to the folder containing the files to be tested
--g path to the folder containing realigned samples
--n path to the nipt_files.csv
--l left threshold of z-score (default = -3)
--r right threshold of z-score (default = 3)
--c a file containing the mean and standard deviation of control samples (details in Table 2).
-example:
-python3 trisomy_detection.py -s data/sam/ -g data/aligned_sam/ -n data/nipt_files_ART-Random.csv -l -3 -r 3 -c data/control_group (AR).csv
+• -s path to the folder containing the files to be tested
 
+• -g path to the folder containing realigned samples
+
+• -n path to the nipt_files.csv
+
+• -l left threshold of z-score (default = -3)
+
+• -r right threshold of z-score (default = 3)
+
+• -c a file containing the mean and standard deviation of control samples (details in Table 2).
+
+### example:
+```bash
+python3 trisomy_detection.py -s data/sam/ -g data/aligned_sam/ -n data/nipt_files_ART-Random.csv -l -3 -r 3 -c data/control_group (AR).csv
+```
 
 
