@@ -1,0 +1,6 @@
+This is a file that records error log information.
+20231116_105857:Error occurred while reading 0sample.sam, idx = 0, error: local variable 'start_node' referenced before assignment
+20231116_114522:Error occurred while reading 0sample.sam, idx = 0, error: local variable 'start_node' referenced before assignment
+20231116_150650:Error occurred while reading 0sample.sam, idx = 0, error: local variable 'start_node' referenced before assignment
+20231116_151013:Error occurred while reading data/sam\sample_0.sam, idx = 0, error: local variable 'start_node' referenced before assignment
+20231116_151202:Error occurred while reading data/sam\sample_0.sam, idx = 0, error: local variable 'start_node' referenced before assignment
