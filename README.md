@@ -12,34 +12,48 @@ then, in NPIT-PG environment, install the following package:
 ### usage:
 ```bash
 python3 gen_pgg.py [-r REF.FA_FILE] [-s SAM_PATH] [-n NIPT_FILE]
-```bash
+```
 ### optional arguments: 
 • -r path to the reference genome file (such as GRCh38.fa)
+
 • -s path to the folder containing the files to be tested
+
 • -n path to the nipt_files.csv
 
 ### example:
+```bash
 python3 gen_pgg.py -r data/ref.fa -s data/sam/ -n data/nipt_files_ART-Random.csv
+```
 The content of the nipt_files.csv file is as illustrated in Table 1, documenting the file name mappings for each testing file. This practice aids in standardizing file management and enhances testing efficiency.
 
-# Step 3. Sequence-to-graph alignment
-usage:
+## Step 3. Sequence-to-graph alignment
+### usage:
+```bash
 python3 map2pgg.py [-p PGG_FILE] [-s SAM_PATH] [-n NIPT_FILE] [-k K_MER]
-optional arguments: 
--p the pan-genome file path
--s path to the folder containing the files to be tested
--n path to the nipt_files.csv
--k k-mer length, default=5
-example:
-python3 map2pgg.py -p data/pgg.json -s data/sam/ -n data/nipt_files_ART-Random.csv -k 5
+```
+### optional arguments: 
+• -p the pan-genome file path
 
-# Step 4. Z-score test based on multi-source aligned read
-usage:
+• -s path to the folder containing the files to be tested
+
+• -n path to the nipt_files.csv
+
+• -k k-mer length, default=5
+
+### example:
+```bash
+python3 map2pgg.py -p data/pgg.json -s data/sam/ -n data/nipt_files_ART-Random.csv -k 5
+```
+
+## Step 4. Z-score test based on multi-source aligned read
+### usage:
+```bash
 python3 aneup_det.py [-s SAM_PATH] [-g ALIGNED_SAM_PATH] [-n NIPT_FILE] 
 [-l LEFT_THRESHOLD] 
 [-r RIGHT_THRESHOLD]
 [-c CONTROL SAMPLE]
-optional arguments: 
+```
+### optional arguments: 
 -s path to the folder containing the files to be tested
 -g path to the folder containing realigned samples
 -n path to the nipt_files.csv
