@@ -83,7 +83,7 @@ python3 aneup_det.py [-s SAM_PATH] [-g ALIGNED_SAM_PATH] [-n NIPT_FILE]
 
 ### example:
 ```bash
-python3 trisomy_detection.py -s data/sam/ -g data/aligned_sam/ -n data/nipt_files_ART-Random.csv -l -3 -r 3 -c data/control_group (AR).csv
+python3 aneup_det.py -s data/sam/ -g data/aligned_sam/ -n data/nipt_files_ART-Random.csv -l -3 -r 3 -c data/control_group (AR).csv
 ```
 #### Table 2. The mean and standard deviation of control samples.
 
