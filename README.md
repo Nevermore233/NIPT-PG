@@ -1,14 +1,14 @@
 # NIPT-PG
 NIPT-PG: Empowering Non-Invasive Prenatal Testing to learn from population genomics through an incremental pan-genomic approach
 
-# Step 1. Package Dependency
+## Step 1. Package Dependency
 first, install the NPIT-PG conda environment:
-conda create -c NPIT-PG
-conda activate NPIT-PG
+'''conda create -c NPIT-PG'''
+'''conda activate NPIT-PG'''
 then, in NPIT-PG environment, install the following package:
-pip install pandas numpy tqdm argparse
+'''pip install pandas numpy tqdm argparse'''
 
-# Step 2. generating pan-genome
+## Step 2. generating pan-genome
 usage:
 python3 gen_pgg.py [-r REF.FA_FILE] [-s SAM_PATH] [-n NIPT_FILE]
 optional arguments: 
