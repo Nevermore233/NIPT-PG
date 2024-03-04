@@ -9,13 +9,16 @@ then, in NPIT-PG environment, install the following package:
 '''pip install pandas numpy tqdm argparse'''
 
 ## Step 2. generating pan-genome
-usage:
+### usage:
+```bash
 python3 gen_pgg.py [-r REF.FA_FILE] [-s SAM_PATH] [-n NIPT_FILE]
-optional arguments: 
--r path to the reference genome file (such as GRCh38.fa)
--s path to the folder containing the files to be tested
--n path to the nipt_files.csv
-example:
+```bash
+### optional arguments: 
+• -r path to the reference genome file (such as GRCh38.fa)
+• -s path to the folder containing the files to be tested
+• -n path to the nipt_files.csv
+
+### example:
 python3 gen_pgg.py -r data/ref.fa -s data/sam/ -n data/nipt_files_ART-Random.csv
 The content of the nipt_files.csv file is as illustrated in Table 1, documenting the file name mappings for each testing file. This practice aids in standardizing file management and enhances testing efficiency.
 
